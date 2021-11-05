@@ -79,6 +79,10 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- React JS allows for instant data changes and alter the right components with minimal code. Instead of hard coding everything into html or JSX, you can simply create your component and its styles, and import them to your app.js return, which is then imported to root to display as HTML and CSS
+
 1. Describe component state.
+- You have your state and then setState(being updated). When the state changes the component re-renders. Thus allowing different data to be manipulated within the API that you can now show or list instantly.
 1. Describe props.
+- Props are passed into components using HTML attributes. Props are then binded within the HTML tags with keys to display information logged from the API.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?

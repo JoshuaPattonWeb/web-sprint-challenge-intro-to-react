@@ -5,6 +5,28 @@ import styled from 'styled-components'
 
 const Character = (props) => {
 
+// const StyledP = styled.p
+const StyledDiv = styled.div`
+display:flex;
+justify-content: center;
+div {
+    flex-wrap:wrap;
+    border: black 2px solid;
+    border-radius: 10%;
+    width:20%;
+    margin: 0 0 1% 0;
+}
+div:hover {
+    border: blue 2px solid;
+}
+div h2:hover {
+    color: blue;
+}
+div p:hover {
+    color:red;
+}
+
+`
 
     const filler = props.props
 
@@ -14,24 +36,24 @@ const Character = (props) => {
 
 
     return  (
-    <div1>
+    <div>
         {filler.map(info => {
         return (
-            <div2>
-                <p>{info.name}</p>
-                <p>{info.birth_year}</p>
-               <div3> 
+            <StyledDiv>
+                <div>
+                    <h2><b>{info.name}</b></h2>
+                    <p>{info.birth_year}</p>
                     <p>Height: {info.height}</p>
                     <p>Mass: {info.mass}</p>
                     <p>Hair color: {info.hair_color}</p>
                     <p>Skin color: {info.skin_color}</p>
                     <p>Eye color: {info.eye_color}</p>
                     <p>Gender: {info.gender}</p>
-               </div3>
-            </div2>
+                   </div>
+            </StyledDiv>
         )
         })}
-    </div1>
+    </div>
     )
 }
 
