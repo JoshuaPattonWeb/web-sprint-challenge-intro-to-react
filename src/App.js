@@ -2,21 +2,21 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { useState } from 'react';
 import axios from 'axios';
-import Characters from './components/Character';
+import Character from './components/Character';
 
 
 const App = () => {
-    const [people, setPeople] = useState(null)
+    const [cast, setCast] = useState([])
 useEffect(() => {
   axios.get(`https://swapi.dev/api/people`)
   .then(res => {
-    setPeople(res.data)
+    setCast(res.data)
   })
   .catch(err => {
     console.error(err)
   })
 }, [])
-  console.log(people)
+  console.log(cast)
 
   // const Character = people.map(stats => stats.name + stats.birth_year + stats)
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -30,6 +30,7 @@ useEffect(() => {
     
     <div className="App">
         <h1 className="Header">StarWars Characters</h1>
+        <Character props={cast} />
     </div>
   );
 }
