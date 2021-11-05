@@ -10,11 +10,13 @@ const StyledDiv = styled.div`
 display:flex;
 justify-content: center;
 div {
-    flex-wrap:wrap;
     border: black 2px solid;
     border-radius: 10%;
     width:20%;
     margin: 0 0 1% 0;
+    background-color: lightgray;
+    
+    
 }
 div:hover {
     border: blue 2px solid;

@@ -86,3 +86,4 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. Describe props.
 - Props are passed into components using HTML attributes. Props are then binded within the HTML tags with keys to display information logged from the API.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+- When using side effects, you're telling the components that they need something to do after rendering. When the component is rendered, it will run the effect after the DOM is updated.
