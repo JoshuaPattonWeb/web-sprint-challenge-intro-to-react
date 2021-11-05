@@ -14,8 +14,10 @@ const Characters = (props) => {
 
 
     return  (
+        
         <div>
-                   
+            <h2>{info.name}</h2>  
+            <h2>{info.birth_date}</h2> 
         </div>
     )
 }

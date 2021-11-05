@@ -6,7 +6,7 @@ import Characters from './components/Character';
 
 
 const App = () => {
-    const [people, setPeople] = useState('')
+    const [people, setPeople] = useState(null)
 useEffect(() => {
   axios.get(`https://swapi.dev/api/people`)
   .then(res => {
@@ -31,8 +31,6 @@ useEffect(() => {
     <div className="App">
         <h1 className="Header">StarWars Characters</h1>
     </div>
-    
-    
   );
 }
 
