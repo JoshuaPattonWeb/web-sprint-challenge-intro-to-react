@@ -16,13 +16,13 @@ div {
     margin: 0 0 1% 0;
     background-color: lightgray;
     
-    
 }
 div:hover {
     border: blue 2px solid;
 }
 div h2:hover {
     color: blue;
+    text-decoration: underline;
 }
 div p:hover {
     color:red;
